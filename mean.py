@@ -1,4 +1,10 @@
+# Prints mean of the numbers given as arguments.
 import sys
+
+
+if len(sys.argv)==1:
+	print 'Error: No arguments given.'
+	sys.exit()
 
 sum = 0
 
