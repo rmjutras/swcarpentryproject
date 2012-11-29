@@ -7,10 +7,12 @@ if len(sys.argv)==1:
 	sys.exit()
 
 sum = 0
+n = 0
 
-#Takes sum of all inputted numbers
-for num in sys.argv[1:]:
-	sum+= float(num)
+#Takes sum of all inputted numbers and finds length
+for line in open(sys.argv[1]):
+	sum+= float(line)
+	n+=1
 
 #Calculates and prints the average
-print sum / (len(sys.argv)-1
+print sum / n
